@@ -20,31 +20,16 @@
         <section>
           <p class="title-text"><a href="#">게임 친구 매칭 플랫폼(Diguru)</a></p>
           <p class="desc-text">
-            사용자 간 게임 친구 매칭을 지원하는 플랫폼을 직접 설계하고 개발했습니다. Figma 기반 UI/UX 기획부터 Next.js
-            프론트엔드, NestJS 백엔드, PostgreSQL(Supabase) 데이터베이스까지 전 과정을 구현했습니다. 또한 ESXi 환경에서
-            가상 서버를 구성하고, pfSense 및 Snort 보안 룰을 적용해 <strong>보안성을 고려한 서비스 아키텍처</strong>를
-            설계했습니다. 이를 통해 기획–개발–인프라–보안을 아우르는 엔드투엔드 경험을 확보했습니다.
+            게임 친구 매칭 플랫폼을 직접 설계하고 개발했습니다.
+            <ul>
+              <li>프론트엔드(Next.js): <strong>무한 스크롤 기반 친구 추천 피드</strong> 구현, React Query로 API 응답 캐싱, Zustand로 전역 상태 관리</li>
+              <li>실시간 기능: <strong>SockJS + STOMP 기반 실시간 채팅</strong>, 친구 요청 및 수락 알림 기능 구현 예정</li>
+              <li>백엔드(NestJS + Supabase): <strong>OAuth 기반 사용자 인증 및 세션 관리</strong>, TypeORM을 활용한 다중 조인 쿼리 최적화, 예외 처리 로직 계층화</li>
+              <li>인프라: ESXi 기반 가상 서버 구성, pfSense로 방화벽 정책 적용, Snort 룰로 침입 탐지 설정</li>
+            </ul>
+            서비스 전 과정(기획–개발–배포–보안)을 직접 수행하며 <strong>풀스택 개발과 인프라 운영 경험</strong>을 동시에 확보했습니다.
           </p>
-          <p class="sub-text">Next.js / NestJS / PostgreSQL / Supabase / ESXi / pfSense / Snort</p>
-        </section>
-
-        <section>
-          <p class="title-text"><a href="https://github.com/parkminsoo99/Formedi-FrontEnd">Formedi(포메디)</a></p>
-          <p class="desc-text">
-            외국인을 대상으로 병원·약국·상비약 정보를 다국어로 제공하는 의료 정보 플랫폼 개발에 참여했습니다.
-            프론트엔드를 담당하며 다국어 지원과 위치 기반 추천 기능을 구현했습니다. 실제 의료 서비스 환경에서
-            <strong>사용자 친화적 인터페이스와 데이터 처리 구조</strong>를 경험했습니다.
-          </p>
-          <p class="sub-text">Next.js / Spring Boot / MySQL</p>
-        </section>
-
-        <section>
-          <p class="title-text"><a href="https://github.com/parkminsoo99/coding-nara">코딩나라</a></p>
-          <p class="desc-text">
-            청소년 대상 온라인 코딩 과외 플랫폼의 <strong>Full-Stack 개발 및 배포</strong>를 담당했습니다. 실사용자
-            피드백을 반영하여 기능을 개선했고, 서비스 운영 전반을 경험했습니다.
-          </p>
-          <p class="sub-text">Vanilla JS / Node.js / MySQL</p>
+          <p class="sub-text">Next.js / NestJS / Supabase OAuth / PostgreSQL / ESXi / pfSense / Snort / SockJS</p>
         </section>
 
         <section>
@@ -54,32 +39,39 @@
             </a>
           </p>
           <p class="desc-text">
-            비트코인의 합의 알고리즘 PoW를 단일 시스템과 분산 환경에서 각각 구현했습니다. 연산 성능을 비교 분석하며
-            <strong>분산 컴퓨팅 구조의 효율성</strong>을 실험적으로 검증했습니다.
+            비트코인 합의 알고리즘인 PoW(Proof-of-Work)를 구현하고, 단일 환경과 분산 환경의 연산 속도를 비교했습니다.
+            <ul>
+              <li>멀티스레드 환경에서 <strong>난이도 조정 알고리즘</strong> 구현</li>
+              <li>분산 환경에서 <strong>노드별 연산 시간 측정</strong> 및 성능 분석</li>
+            </ul>
           </p>
           <p class="sub-text">C</p>
           <video class="video" src="./videos/simple_pow.mp4" controls>시연 영상</video>
         </section>
 
         <section>
-          <p class="title-text">
-            <a href="https://github.com/parkminsoo99/Network_Programming_2team">네트워크 프로그래밍</a>
-          </p>
+          <p class="title-text"><a href="https://github.com/parkminsoo99/Network_Programming_2team">네트워크 프로그래밍</a></p>
           <p class="desc-text">
-            미디어 스트리밍(HLS/DASH) 프로토콜 패킷을 분석하고 차단하는 보안 도구를 개발했습니다. PyQt 기반 GUI를
-            제작하고 OpenSSL을 적용해 암호화 통신을 다루며, <strong>네트워크 보안 실습 경험</strong>을 쌓았습니다.
+            미디어 스트리밍(HLS/DASH) 패킷을 분석하고 차단하는 보안 툴을 개발했습니다.
+            <ul>
+              <li>Pyshark로 <strong>스트리밍 패킷 캡처</strong> 및 분석</li>
+              <li>PyQt GUI를 제작해 사용자 친화적인 패킷 차단 제어 기능 제공</li>
+              <li>OpenSSL로 HTTPS 암호화 트래픽을 복호화 후 차단 처리</li>
+            </ul>
           </p>
           <p class="sub-text">Python / PyQt5 / Pyshark / OpenSSL</p>
           <video class="video" src="./videos/cut_throught.mp4" controls>시연 영상</video>
         </section>
 
         <section>
-          <p class="title-text">
-            <a href="https://github.com/parkminsoo99/Git_Business_Card_Web">깃허브 전자 명함 플랫폼</a>
-          </p>
+          <p class="title-text"><a href="https://github.com/parkminsoo99/Git_Business_Card_Web">깃허브 전자 명함 플랫폼</a></p>
           <p class="desc-text">
-            Github 계정을 기반으로 전자 명함을 자동 생성하는 서비스(Web/App)를 개발했습니다. 웹과 모바일을 동시에
-            지원하는 구조로 설계했으며, <strong>배포 및 운영 경험</strong>까지 포함됩니다.
+            Github 계정 기반 전자 명함 자동 생성 서비스(Web/App)를 개발했습니다.
+            <ul>
+              <li>Next.js 프론트엔드에서 <strong>사용자 프로필 기반 명함 자동 렌더링</strong> 구현</li>
+              <li>웹·모바일을 동시에 지원하는 <strong>멀티플랫폼 아키텍처</strong> 설계</li>
+              <li>앱 버전에서는 <strong>QR 코드 기반 명함 공유</strong> 기능 추가</li>
+            </ul>
           </p>
           <p class="sub-text">Next.js</p>
           <div class="video-group">
@@ -102,10 +94,13 @@
         <section>
           <p class="title-text">현대글로비스 – 보안팀</p>
           <p class="desc-text">
-            NGFW 기반 트래픽 경로 설계 및 운영을 담당하며 다양한 네트워크 환경에 맞는 보안 정책을 수립했습니다. EDR
-            솔루션을 통해 위협 행위를 탐지하고 보안 이벤트에 대응했으며, DB 접근제어를 통해 민감 데이터 보호 및 접근
-            권한을 관리했습니다. 실제 로그 분석을 통해 침해 시나리오를 파악하고, 사전 예방 활동에 기여했습니다.
-            <strong>실무 보안 환경에서 네트워크 및 시스템 보안 운영 능력을 강화</strong>했습니다.
+            보안팀에서 근무하며 네트워크 및 데이터 보안 업무를 수행했습니다.
+            <ul>
+              <li>NGFW 기반 <strong>트래픽 경로 설계</strong> 및 보안 정책 운영</li>
+              <li>EDR을 활용한 <strong>위협 탐지 및 사고 대응</strong></li>
+              <li>DB 접근제어로 <strong>민감 데이터 보호</strong> 및 권한 관리</li>
+              <li>로그 분석을 통한 <strong>침해 시나리오 파악</strong> 및 사전 차단</li>
+            </ul>
           </p>
           <p class="sub-text">NGFW / EDR / DB 접근제어 / 로그 분석</p>
         </section>
@@ -113,10 +108,12 @@
         <section>
           <p class="title-text">Logan – Tech Team Intern</p>
           <p class="desc-text">
-            미국 스타트업 Logan의 기술팀에서 인턴으로 근무했습니다. Next.js와 GraphQL을 활용해 프로필 기능을 개발했고,
-            AWS Route53으로 DB 서버를 설정했습니다. Hasura 엔진을 AWS EKS 클러스터에 배포하고 ALB를 통해 트래픽 분산을
-            구현했습니다.
-            <strong>클라우드 네이티브 환경에서의 서비스 운영 경험</strong>을 확보했습니다.
+            미국 스타트업 Logan의 기술팀 인턴으로 근무했습니다.
+            <ul>
+              <li>Next.js와 GraphQL로 <strong>Mower 프로필 기능</strong> 개발</li>
+              <li>AWS Route53을 통한 <strong>PostgreSQL 서버 설정</strong></li>
+              <li>Hasura 엔진을 <strong>EKS 파드로 배포</strong>, ALB를 통한 트래픽 분산 구성</li>
+            </ul>
           </p>
           <p class="sub-text">Next.js / Hasura / GraphQL / PostgreSQL / AWS(EKS, Route53)</p>
         </section>
@@ -124,9 +121,12 @@
         <section>
           <p class="title-text">(주)아톤 – QA</p>
           <p class="desc-text">
-            PASS 앱 전자문서 기능 품질 보증(QA) 업무를 담당했습니다. Postman을 활용해 다양한 API 요청과 시나리오를
-            검증하고, 기능별 테스트 케이스를 설계했습니다. 반복적인 검증을 통해
-            <strong>앱 안정성 확보와 품질 개선</strong>에 기여했습니다.
+            PASS 앱 전자문서 기능 QA 업무를 수행했습니다.
+            <ul>
+              <li>Postman으로 <strong>API 기능 테스트 및 시나리오 검증</strong></li>
+              <li>기능별 테스트 케이스 설계 및 반복 검증</li>
+              <li>QA 프로세스를 통해 앱 안정성 확보 및 품질 개선</li>
+            </ul>
           </p>
           <p class="sub-text">QA / API Testing / Postman</p>
         </section>
@@ -137,7 +137,9 @@
         <h2 class="themes">Papers</h2>
         <section>
           <p class="title-text">
-            <a href="https://kiss.kstudy.com/Detail/Ar?key=4028522"> Next.js 기반 Github 전자 명함 생태계 구축 </a>
+            <a href="https://kiss.kstudy.com/Detail/Ar?key=4028522">
+              Next.js 기반 Github 전자 명함 생태계 구축
+            </a>
           </p>
           <p class="desc-text">한국정보처리학회 ASK 2023 논문 발표</p>
 
@@ -163,7 +165,7 @@
         <section>
           <p>University of Nebraska at Kearney(UNK)</p>
           <p class="desc-text">
-            교환학생 프로그램에 참여해 영어 기반 수업과 현지 협업 경험을 쌓으며 글로벌 커뮤니케이션 역량을 높였습니다.
+            교환학생 프로그램 참여를 통해 영어 기반 수업과 현지 협업 경험을 쌓았습니다.
           </p>
         </section>
 
@@ -177,8 +179,12 @@
         <section>
           <a href="./files/k-shield_2.jpg">K-Shield.Jr</a>
           <p class="desc-text">
-            보안사고 분석대응 교육 과정을 수료했습니다. 웹 해킹, SQL Injection, ARP 스푸핑 등 공격 및 대응 실습을 통해
-            보안 분석 능력을 강화했습니다.
+            보안사고 분석대응 교육 과정을 수료했습니다.
+            <ul>
+              <li>웹 해킹(SQL Injection, XSS) 실습</li>
+              <li>네트워크 공격(ARP 스푸핑) 및 대응</li>
+              <li>포렌식 기법으로 보안 로그 분석</li>
+            </ul>
           </p>
         </section>
 
