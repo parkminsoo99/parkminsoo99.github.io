@@ -53,6 +53,15 @@ section {
   color: #282828;
 }
 
+.title-text-group {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #282828;
+}
+
 .desc-text {
   font-size: 10px;
 }
