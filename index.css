@@ -1,4 +1,6 @@
-body, h1, h2 {
+body,
+h1,
+h2 {
   margin: 0px;
   padding: 0px;
 }
@@ -7,22 +9,20 @@ body, h1, h2 {
   min-width: fit-content;
 }
 
-
 .title {
-    text-align: right;
+  text-align: right;
 }
 
 .mainbox {
-
-    width:70%;
-    margin: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #ebebeb;
-    padding: 30px;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 70%;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ebebeb;
+  padding: 30px;
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
 }
-  
+
 h1 {
   font-size: 40px;
   font-weight: bold;
@@ -31,22 +31,20 @@ h1 {
 .themes {
   font-size: 20px;
   font-weight: lighter;
-  color:#111111;
+  color: #111111;
   border-bottom: 1px solid #bab9b9;
   margin-bottom: 16px;
   padding-bottom: 5px;
-
 }
 
 .name-text {
   font-size: 14px;
-  color:#888888;
+  color: #888888;
   font-weight: bold;
 }
 
-
 section {
-  margin-bottom: 34px; 
+  margin-bottom: 34px;
 }
 
 .title-text {
@@ -55,11 +53,11 @@ section {
   color: #282828;
 }
 
-.desc-text{
+.desc-text {
   font-size: 10px;
 }
 
-.sub-text{
+.sub-text {
   font-size: 9px;
   font-weight: lighter;
 }
@@ -75,21 +73,27 @@ section {
 }
 
 .contact {
-    text-align: right;
+  text-align: right;
 }
-.video{
+.video {
   width: 300px;
   height: 150px;
 }
 
-.video-group{
+.video-group {
   display: flex;
   flex-direction: row;
-  gap:10px;
+  gap: 10px;
 }
-.sub-video-group{
+.sub-video-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.link-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
